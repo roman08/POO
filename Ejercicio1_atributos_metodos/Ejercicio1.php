@@ -4,13 +4,11 @@
         //atributos de la clase persona
         public $nombre = array();
         public $apellido = array();
-
         //metodos de la clase persona
         public function guardar($nombre, $apellido) {
             $this->nombre[] = $nombre;
             $this->apellido[] = $apellido;
         }
-
          public function mostrar() {
             //ciclo para mostrar los datos del array llamando la function formato().
             for ($i=0; $i < count($this->nombre); $i++) { 
